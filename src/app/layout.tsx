@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import 'react-toastify/dist/ReactToastify.css';
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`bg-gradient-to-r from-purple-950 via-blue-950 to-indigo-950 background-animate ${inter.className}`}>
+        <ToastContainer position="top-left" />
+        <main className="mx-14 min-h-screen py-20">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
