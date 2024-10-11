@@ -99,7 +99,7 @@ export default function Game({ cards }: any) {
   }
 
   return (
-    <div className="w-3/4 mx-auto flex flex-col items-stretch">
+    <div className="w-full md:w-3/4 mx-auto flex flex-col items-stretch">
       <div dir="rtl" className={`w-full ${getTeamColor()} mb-5 text-center arabic-regular text-2xl py-3 rounded-lg`}>
         الفريق {team === 0 ? "احمر" : "اخضر"}
         &nbsp;

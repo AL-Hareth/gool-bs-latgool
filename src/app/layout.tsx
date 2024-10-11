@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-gradient-to-r from-purple-950 via-blue-950 to-indigo-950 background-animate ${inter.className}`}>
         <ToastContainer position="top-left" />
-        <main className="mx-14 min-h-screen py-20">
+        <main className="mx-10 md:mx-14 min-h-screen py-20">
           {children}
         </main>
       </body>
